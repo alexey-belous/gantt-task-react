@@ -41,7 +41,7 @@ export const GridBody: React.FC<GridBodyProps> = ({
         y={y}
         width={svgWidth}
         height={rowHeight}
-        className={task?.styles?.gridRowClass ? tasks[0]?.styles?.gridRowClass : styles.gridRow}
+        className={task?.styles?.gridRowClass ? task?.styles?.gridRowClass : styles.gridRow}
       />
     );
     rowLines.push(
@@ -51,7 +51,7 @@ export const GridBody: React.FC<GridBodyProps> = ({
         y1={y + rowHeight}
         x2={svgWidth}
         y2={y + rowHeight}
-        className={tasks[0]?.styles?.gridRowLineClass ? tasks[0]?.styles?.gridRowLineClass : styles.gridRowLine}
+        className={task?.styles?.gridRowLineClass ? task?.styles?.gridRowLineClass : styles.gridRowLine}
       />
     );
     y += rowHeight;
