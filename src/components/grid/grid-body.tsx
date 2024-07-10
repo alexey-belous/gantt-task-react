@@ -30,7 +30,7 @@ export const GridBody: React.FC<GridBodyProps> = ({
       y1={0}
       x2={svgWidth}
       y2={0}
-      className={styles.gridRowLine}
+      className={tasks[0]?.styles?.gridRowLineClass ? tasks[0]?.styles?.gridRowLineClass : styles.gridRowLine}
     />,
   ];
   for (const task of tasks) {
@@ -41,7 +41,7 @@ export const GridBody: React.FC<GridBodyProps> = ({
         y={y}
         width={svgWidth}
         height={rowHeight}
-        className={styles.gridRow}
+        className={task?.styles?.gridRowClass ? tasks[0]?.styles?.gridRowClass : styles.gridRow}
       />
     );
     rowLines.push(
@@ -51,7 +51,7 @@ export const GridBody: React.FC<GridBodyProps> = ({
         y1={y + rowHeight}
         x2={svgWidth}
         y2={y + rowHeight}
-        className={styles.gridRowLine}
+        className={tasks[0]?.styles?.gridRowLineClass ? tasks[0]?.styles?.gridRowLineClass : styles.gridRowLine}
       />
     );
     y += rowHeight;

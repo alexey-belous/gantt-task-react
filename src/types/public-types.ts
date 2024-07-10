@@ -25,6 +25,9 @@ export interface Task {
     backgroundSelectedColor?: string;
     progressColor?: string;
     progressSelectedColor?: string;
+
+    gridRowClass?: string;
+    gridRowLineClass?: string;
   };
   isDisabled?: boolean;
   project?: string;

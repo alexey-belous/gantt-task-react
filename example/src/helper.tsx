@@ -12,6 +12,10 @@ export function initTasks() {
       type: "project",
       hideChildren: false,
       displayOrder: 1,
+      styles: {
+        gridRowClass: 'test-row-class',
+        gridRowLineClass: 'test-row-line-class'
+      }
     },
     {
       start: new Date(currentDate.getFullYear(), currentDate.getMonth(), 1),
