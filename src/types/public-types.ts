@@ -28,6 +28,8 @@ export interface Task {
 
     gridRowClass?: string;
     gridRowLineClass?: string;
+    labelColor?: string;
+    labelInnerColor?: string;
   };
   isDisabled?: boolean;
   project?: string;

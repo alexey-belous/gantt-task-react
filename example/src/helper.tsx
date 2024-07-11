@@ -14,7 +14,9 @@ export function initTasks() {
       displayOrder: 1,
       styles: {
         gridRowClass: 'test-row-class',
-        gridRowLineClass: 'test-row-line-class'
+        gridRowLineClass: 'test-row-line-class',
+        labelColor: 'red',
+        labelInnerColor: 'green',
       }
     },
     {
@@ -32,6 +34,10 @@ export function initTasks() {
       type: "task",
       project: "ProjectSample",
       displayOrder: 2,
+      styles: {
+        labelColor: 'red',
+        labelInnerColor: 'green',
+      }
     },
     {
       start: new Date(currentDate.getFullYear(), currentDate.getMonth(), 2),
@@ -43,6 +49,10 @@ export function initTasks() {
       type: "task",
       project: "ProjectSample",
       displayOrder: 3,
+      styles: {
+        labelColor: 'red',
+        labelInnerColor: 'green',
+      }
     },
     {
       start: new Date(currentDate.getFullYear(), currentDate.getMonth(), 4),
@@ -65,6 +75,10 @@ export function initTasks() {
       type: "task",
       project: "ProjectSample",
       displayOrder: 5,
+      styles: {
+        labelColor: 'red',
+        labelInnerColor: 'green',
+      }
     },
     {
       start: new Date(currentDate.getFullYear(), currentDate.getMonth(), 8),

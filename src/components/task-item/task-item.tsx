@@ -111,6 +111,9 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       <text
         x={getX()}
         y={task.y + taskHeight * 0.5}
+        fill={isTextInside ?
+          task.styles.labelInnerColor
+          : task.styles.labelColor}
         className={
           isTextInside
             ? style.barLabel

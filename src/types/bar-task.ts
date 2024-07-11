@@ -15,8 +15,12 @@ export interface BarTask extends Task {
   styles: {
     backgroundColor: string;
     backgroundSelectedColor: string;
+
     progressColor: string;
     progressSelectedColor: string;
+
+    labelColor: string;
+    labelInnerColor: string;
   };
 }
 
