@@ -16,6 +16,10 @@ type BarDisplayProps = {
     backgroundSelectedColor: string;
     progressColor: string;
     progressSelectedColor: string;
+    gridRowClass?: string;
+    gridRowLineClass?: string;
+    labelColor?: string;
+    labelInnerColor?: string;
   };
   onMouseDown: (event: React.MouseEvent<SVGPolygonElement, MouseEvent>) => void;
 };

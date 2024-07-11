@@ -18,6 +18,10 @@ export interface BarTask extends Task {
 
     progressColor: string;
     progressSelectedColor: string;
+    gridRowClass?: string;
+    gridRowLineClass?: string;
+    labelColor?: string;
+    labelInnerColor?: string;
   };
 }
 
